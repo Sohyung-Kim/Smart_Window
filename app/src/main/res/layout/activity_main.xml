@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="344dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/window" />
+
+    <!--top bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/color_title"
+        android:elevation="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nanum_square_eb"
+            android:gravity="center"
+            android:text="스마트 창문"
+            android:textColor="@color/color_white"
+            android:textSize="8pt" />
+    </LinearLayout>
+    <!--top bar-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="68dp" />
+
+        <!--거실-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="174dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/nanum_square_b"
+                android:text="거실"
+                android:textColor="@color/color_white"
+                android:textSize="6pt" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:src="@drawable/under_arrow" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--거실-->
+
+    <!--움직이는 창문-->
+
+    <ImageView
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="182dp"
+        android:layout_marginBottom="220dp"
+        android:src="@drawable/move_window" />
+
+    <!--움직이는 창문-->
+    <!--데이터-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="276dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/white_background" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanum_square_eb"
+                android:paddingLeft="32dp"
+                android:paddingTop="16dp"
+                android:text="리모콘"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="7pt" />
+        </FrameLayout>
+
+        <!--현재 데이터 배경-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="168dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/white_background" />
+
+            <!--현재 데이터 제목-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanum_square_eb"
+                    android:paddingLeft="32dp"
+                    android:paddingTop="16dp"
+                    android:text="현재 데이터"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="7pt" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanum_square_eb"
+                    android:paddingTop="17dp"
+                    android:paddingRight="32dp"
+                    android:text="19/02/08/06:09"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12.5sp" />
+
+            </LinearLayout>
+
+            <!--현재 데이터 제목-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--세부 데이터 : 먼지, 온도, 습도-->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="64dp"
+                                android:layout_marginBottom="4dp"
+                                android:src="@drawable/red" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/tmon_monsori"
+                                android:gravity="center|right"
+                                android:text="140"
+                                android:textColor="#333c41"
+                                android:textSize="28sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/nanum_square_eb"
+                                android:paddingLeft="2dp"
+                                android:text="미세 먼지"
+                                android:textColor="@color/color_middlegray"
+                                android:textSize="12.5sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="4dp"
+                            android:paddingTop="64dp"
+                            android:text="㎛"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/nanum_square_eb"
+                            android:textSize="6pt" />
+
+                        <ImageView
+                            android:layout_width="3dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/gray_line" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="64dp"
+                                android:layout_marginBottom="4dp"
+                                android:src="@drawable/green" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/tmon_monsori"
+                                android:gravity="center|right"
+                                android:text="20.5"
+                                android:textColor="#333c41"
+                                android:textSize="28sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/nanum_square_eb"
+                                android:paddingLeft="2dp"
+                                android:text="온도"
+                                android:textColor="@color/color_middlegray"
+                                android:textSize="12.5sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="4dp"
+                            android:paddingTop="64dp"
+                            android:text="°C"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/nanum_square_eb"
+                            android:textSize="6pt" />
+
+                        <ImageView
+                            android:layout_width="3dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/gray_line" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="64dp"
+                                android:layout_marginBottom="4dp"
+                                android:src="@drawable/yellow" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/tmon_monsori"
+                                android:gravity="center|right"
+                                android:text="24.0"
+                                android:textColor="#333c41"
+                                android:textSize="28sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/nanum_square_eb"
+                                android:paddingLeft="2dp"
+                                android:text="습도"
+                                android:textColor="@color/color_middlegray"
+                                android:textSize="12.5sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="4dp"
+                            android:paddingTop="64dp"
+                            android:text="%"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/nanum_square_eb"
+                            android:textSize="6pt" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+        <!--현재 데이터 배경-->
+
+    </LinearLayout>
+    <!--데이터-->
+
+    <!--bottom bar-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:elevation="5dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_gravity="bottom">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="54dp"-->
+            <!--android:elevation="5dp"-->
+            <!--android:src="@drawable/bottom_bar" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:src="@drawable/menu_window" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:src="@drawable/menu_data" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:src="@drawable/menu_setting" />-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--bottom_bar-->
+</FrameLayout>
+
+
