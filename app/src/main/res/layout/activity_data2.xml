@@ -4,25 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_background"
     android:orientation="vertical"
-    tools:context=".DataActivity">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:background="@color/color_background"
+    tools:context=".DataActivity2">
 
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="16.5dp" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="418dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/data_background_re" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="16.5dp" />
 
-</LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="418dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/data_background_re" />
+
+    </LinearLayout>
 
     <!--top bar-->
     <LinearLayout
@@ -80,7 +81,6 @@
 
 
     <!--먼지, 온도, 습도 버튼-->
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -102,6 +102,7 @@
 
     </FrameLayout>
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -117,7 +118,7 @@
                 android:layout_width="71dp"
                 android:layout_height="28dp"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/data_button_pressed" />
+                android:src="@drawable/data_buttonline" />
 
             <TextView
                 android:layout_width="71dp"
@@ -126,7 +127,7 @@
                 android:fontFamily="@font/nanum_square_eb"
                 android:gravity="center"
                 android:text="미세먼지"
-                android:textColor="@color/colorPrimaryDark" />
+                android:textColor="@color/color_white" />
 
         </FrameLayout>
 
@@ -138,7 +139,7 @@
                 android:layout_width="71dp"
                 android:layout_height="28dp"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/data_buttonline"/>
+                android:src="@drawable/data_buttonline" />
 
             <TextView
                 android:layout_width="71dp"
@@ -160,7 +161,7 @@
                 android:layout_width="71dp"
                 android:layout_height="28dp"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/data_buttonline"/>
+                android:src="@drawable/data_button_pressed" />
 
             <TextView
                 android:layout_width="71dp"
@@ -169,7 +170,7 @@
                 android:fontFamily="@font/nanum_square_eb"
                 android:gravity="center"
                 android:text="습도/비"
-                android:textColor="@color/color_white" />
+                android:textColor="@color/colorPrimaryDark" />
 
         </FrameLayout>
     </LinearLayout>
@@ -244,55 +245,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="center"
                 android:layout_marginLeft="10dp"
+                android:gravity="center"
                 android:orientation="horizontal">
 
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/tmon_monsori"
-                    android:gravity="center|right"
-                    android:paddingRight="8dp"
-                    android:text="20"
-                    android:textColor="#333c41"
-                    android:textSize="27sp" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:fontFamily="@font/nanum_square_eb"
-                        android:paddingLeft="4dp"
-                        android:paddingBottom="10dp"
-                        android:text="㎛"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="6pt" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:fontFamily="@font/nanum_square_eb"
-                        android:paddingLeft="2dp"
-                        android:text="이하"
-                        android:textColor="@color/color_middlegray"
-                        android:textSize="6pt" />
-
-                </LinearLayout>
-
                 <ImageView
-                    android:layout_width="3dp"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
-                    android:layout_marginLeft="48dp"
-                    android:layout_marginRight="66dp"
-                    android:src="@drawable/gray_line" />
-
+                    android:src="@drawable/rain_off"
+                    android:paddingRight="12dp"
+                    android:layout_gravity="center" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -300,7 +262,7 @@
                     android:fontFamily="@font/tmon_monsori"
                     android:gravity="center|right"
                     android:paddingRight="8dp"
-                    android:text="80"
+                    android:text="40"
                     android:textColor="#333c41"
                     android:textSize="27sp" />
 
@@ -315,10 +277,9 @@
                         android:fontFamily="@font/nanum_square_eb"
                         android:paddingLeft="4dp"
                         android:paddingBottom="10dp"
-                        android:text="㎛"
+                        android:text="%"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="6pt" />
-
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -327,6 +288,60 @@
                         android:fontFamily="@font/nanum_square_eb"
                         android:paddingLeft="2dp"
                         android:text="이상"
+                        android:textColor="@color/color_middlegray"
+                        android:textSize="6pt" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="3dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/gray_line" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/rain_on"
+                    android:paddingRight="12dp"
+                    android:layout_gravity="center" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tmon_monsori"
+                    android:gravity="center|right"
+                    android:paddingRight="8dp"
+                    android:text="10"
+                    android:textColor="#333c41"
+                    android:textSize="27sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/nanum_square_eb"
+                        android:paddingLeft="4dp"
+                        android:paddingBottom="10dp"
+                        android:text="%"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="6pt" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/nanum_square_eb"
+                        android:paddingLeft="2dp"
+                        android:text="이하"
                         android:textColor="@color/color_middlegray"
                         android:textSize="6pt" />
 
@@ -374,19 +389,26 @@
                 android:layout_height="20dp"
                 android:layout_marginTop="115dp"
                 android:layout_marginRight="4dp"
-                android:src="@drawable/bad_light" />
+                android:src="@drawable/good_light" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/rain_on"
+                android:layout_gravity="center"
+                android:layout_marginTop="226dp"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="245dp"
+                    android:layout_marginTop="2dp"
                     android:fontFamily="@font/tmon_monsori"
-                    android:text="140"
+                    android:text="24.0"
                     android:textColor="@color/color_dark"
                     android:textSize="27sp" />
 
@@ -394,7 +416,7 @@
                     android:layout_width="38dp"
                     android:layout_height="20dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/bad" />
+                    android:src="@drawable/low" />
 
             </LinearLayout>
 
@@ -403,7 +425,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="88dp"
                 android:fontFamily="@font/nanum_square_eb"
-                android:text="㎛"
+                android:text="%"
                 android:textColor="@color/colorPrimaryDark" />
 
 
@@ -415,13 +437,14 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="454dp">
+        android:layout_marginTop="460dp">
 
         <ImageView
             android:layout_width="102dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
-            android:src="@drawable/auto_button" />
+            android:scaleType="fitXY"
+            android:src="@drawable/button_unpressed" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -443,8 +466,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="62dp"
-            android:src="@drawable/bottom_bar"
-            android:elevation="5dp"/>
+            android:elevation="5dp"
+            android:src="@drawable/bottom_bar" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -458,15 +481,15 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="left|center"
-                android:paddingLeft="65dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingLeft="65dp">
 
 
                 <ImageView
                     android:layout_width="26dp"
                     android:layout_height="match_parent"
-                    android:scaleType="fitCenter"
                     android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter"
                     android:src="@drawable/menu_window_unpressed" />
             </LinearLayout>
 
@@ -490,21 +513,19 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center|right"
-                android:paddingRight="65dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingRight="65dp">
 
                 <ImageView
                     android:layout_width="26dp"
                     android:layout_height="match_parent"
-                    android:scaleType="fitCenter"
                     android:elevation="5dp"
+                    android:scaleType="fitCenter"
                     android:src="@drawable/menu_setting_unpressed" />
             </LinearLayout>
 
         </LinearLayout>
 
     </FrameLayout>
-
-    <!--bottom bar-->
 
 </FrameLayout>

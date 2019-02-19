@@ -282,22 +282,24 @@
         android:layout_height="0dp"
         android:layout_weight="1"></LinearLayout>
 
+    <!--bottom bar-->
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="62dp"
             android:src="@drawable/bottom_bar"
             android:elevation="5dp"/>
 
         <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:elevation="5dp"
-        android:orientation="horizontal"
-        android:padding="8dp">
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:elevation="5dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -308,13 +310,13 @@
                 android:orientation="vertical">
 
 
-            <ImageView
-                android:layout_width="26dp"
-                android:layout_height="match_parent"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/menu_window_unpressed" />
-        </LinearLayout>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/menu_window_unpressed" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -323,12 +325,12 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="26dp"
-                android:layout_height="match_parent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/menu_data_unpressed" />
-        </LinearLayout>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/menu_data_unpressed" />
+            </LinearLayout>
 
 
             <LinearLayout
@@ -339,17 +341,19 @@
                 android:paddingRight="65dp"
                 android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="26dp"
-                android:layout_height="match_parent"
-                android:scaleType="fitCenter"
-                android:elevation="5dp"
-                android:src="@drawable/menu_setting_pressed" />
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:elevation="5dp"
+                    android:src="@drawable/menu_setting_pressed" />
+            </LinearLayout>
+
         </LinearLayout>
 
-    </LinearLayout>
-
     </FrameLayout>
+
+    <!--bottom bar-->
 
 
 

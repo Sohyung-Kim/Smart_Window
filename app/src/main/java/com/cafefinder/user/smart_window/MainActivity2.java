@@ -5,12 +5,12 @@ import android.os.Bundle;
 
 import butterknife.ButterKnife;
 
-public class SettingActivity extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_setting);
+        setContentView(R.layout.activity_main2);
         ButterKnife.bind(this);
     }
 }

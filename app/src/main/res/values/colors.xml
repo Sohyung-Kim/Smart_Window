@@ -13,6 +13,9 @@
     <color name="color_lightgray">#dfe1e0</color>
     <color name="color_gray">#4d5d6c</color>
     <color name="color_middlegray">#B34d5d6c</color>
+    <color name="color_good">#009944</color>
+    <color name="color_bad">#e60012</color>
+    <color name="color_normal">#f19149</color>
 
 
 

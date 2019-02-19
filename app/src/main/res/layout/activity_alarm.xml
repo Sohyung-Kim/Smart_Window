@@ -9,11 +9,18 @@
     tools:context=".AlarmActivity">
 
     <!--top bar-->
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:background="@color/color_title"
-        android:elevation="5dp">
+        android:elevation="5dp"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/go_back_left_arrow"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -23,7 +30,7 @@
             android:text="알람"
             android:textColor="@color/color_white"
             android:textSize="8pt" />
-    </LinearLayout>
+    </FrameLayout>
     <!--top bar-->
 
     <FrameLayout
@@ -53,7 +60,7 @@
                 android:layout_marginBottom="16dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/nanum_square_eb"
-                android:text="알림 방식"
+                android:text="미세먼지"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="15sp" />
 
@@ -191,7 +198,7 @@
                 android:layout_marginBottom="16dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/nanum_square_eb"
-                android:text="알림 목록"
+                android:text="빗물감지"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="15sp" />
 
@@ -210,7 +217,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="미세먼지"
+                android:text="메시지"
                 android:fontFamily="@font/nanum_square_eb"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="15sp"
@@ -242,7 +249,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="온도"
+                    android:text="진동"
                     android:fontFamily="@font/nanum_square_eb"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="15sp"
@@ -274,7 +281,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="습도"
+                    android:text="소리"
                     android:fontFamily="@font/nanum_square_eb"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="15sp"
